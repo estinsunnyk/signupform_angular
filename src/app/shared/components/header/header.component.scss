@@ -1,0 +1,23 @@
+@import '../../../../styles/variables.scss';
+
+#header-wrap {
+   position: fixed;
+   top: 0;
+   z-index: 1;
+   background: $primary-color;
+   width: 100%;
+   padding: 18px 0;
+   text-align: center;
+   height: $sticky-header-height;
+   box-sizing: border-box;
+   overflow: hidden;
+
+   .nav-wrap {
+
+      .nav-links {
+         font-size: 2em;
+         font-weight: bold;
+         color: white;
+      }
+   }
+}

@@ -1,0 +1,31 @@
+<div id="signup-wrap">
+   <form class="signup-form" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <div class="form-header">
+         Sign Up
+      </div>
+      <fieldset>
+         <div class="row">
+            <input type="text" id="first-name" class="form-inp" placeholder="First name" formControlName="firstName"
+               [ngClass]="{ 'invalid': submitted && formCntl['firstName'].errors }" />
+         </div>
+         <div class="row">
+            <input type="text" id="last-name" class="form-inp" placeholder="Last name" formControlName="lastName"
+               [ngClass]="{ 'invalid': submitted && formCntl['lastName'].errors }" />
+         </div>
+         <div class="row">
+            <input type="email" id="email" class="form-inp" placeholder="Email" formControlName="email"
+               [ngClass]="{ 'invalid': submitted && formCntl['email'].errors }" />
+         </div>
+         <div class="row terms-wrap">
+            <input type="checkbox" id="terms" class="form-chk" formControlName="terms" />
+            <span [ngClass]="{ 'invalid': submitted && formCntl['terms'].errors }">I agree to the Terms of
+               Service</span>
+         </div>
+      </fieldset>
+      <div class="form-bottom">
+         <button type="submit" class="submit-btn">Submit</button>
+      </div>
+   </form>
+</div>
+
+<!-- <app-login-signup [formGroup]="signupForm" [submitCallback]="onSubmit"></app-login-signup> -->

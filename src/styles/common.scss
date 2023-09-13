@@ -1,0 +1,19 @@
+@import 'variables.scss';
+
+// Primary button
+@mixin primary-btn {
+   padding: 8px 25px;
+   outline: none;
+   border: 0;
+   text-decoration: none;
+   color: #fff;
+   cursor: pointer;
+   background-color: $primary-color;
+}
+
+@mixin align-middle {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}

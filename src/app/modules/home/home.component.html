@@ -1,0 +1,9 @@
+<div id="home-wrap">
+   <div class="login-btn-wrap" *ngIf="authSer.isRegister; else signupBtn">
+      <span>You successfully registered</span>
+      <button routerLink="/signup" class="login-signup-btn login-btn">Login</button>
+   </div>
+   <ng-template #signupBtn>
+      <button routerLink="/signup" class="login-signup-btn">Sign Up</button>
+   </ng-template>
+</div>

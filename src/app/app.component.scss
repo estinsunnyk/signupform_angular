@@ -1,0 +1,6 @@
+@import '../styles/variables.scss';
+
+.main-wrap {
+   min-height: 80vh;
+   margin-top: $sticky-header-height;
+}

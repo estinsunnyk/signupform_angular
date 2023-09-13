@@ -1,0 +1,22 @@
+@import '/src/styles/common.scss';
+
+#home-wrap {
+   height: 80vh;
+   @include align-middle;
+
+   .login-btn-wrap {
+      @include align-middle;
+      font-size: 3em;
+
+      .login-btn {
+         margin-top: 20px;
+      }
+   }
+
+   .login-signup-btn {
+      @include primary-btn;
+      height: 4rem;
+      width: 10rem;
+      font-size: 30px;
+   }
+}
