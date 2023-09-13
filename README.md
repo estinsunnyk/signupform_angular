@@ -12,9 +12,9 @@ This Angular project showcases a responsive signup form with the following featu
 To explore the project, follow these steps:
 
 1. Clone the repository to your local machine:
-   git clone <repository_url>
-2. Install project dependencies:
+   git clone https://github.com/estinsunnyk/signupform_angular.git
+3. Install project dependencies:
    npm install
-3. Start the local development server using npm script
+4. Start the local development server using npm script
    npm run start
 
